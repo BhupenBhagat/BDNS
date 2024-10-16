@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Basic jQuery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#b1").click(function() {
+                $("p").slideUp(3000);
+            });
+            $("#b2").click(function() {
+                $("p").slideDown(3000);
+            });
+        });
+    </script>
+</head>
+<body>
+<p>Bhupen Bhagat :249613</p>
+<button id="b1">Slide UP</button>
+<button id="b2">Slide Down</button>
+
+</button>
+</body>
+</html>

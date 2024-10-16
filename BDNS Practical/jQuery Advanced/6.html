@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Basic jQuery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#b1").click(function(){
+                var str=$("p").html();
+                alert(str);
+            })
+            $("#b2").click(function(){
+                $("p").html("<b>Hello world<b>");
+            })
+        });
+    </script>
+</head>
+<body>
+<p><b>Bhupen </b> <u>249613</u></p>
+<p>MongoDB</p>
+<button id="b1"> Get</button>
+<button id="b2"> Set</button>
+
+</button>
+</body>
+</html>

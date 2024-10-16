@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Basic jQuery </title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // jQuery method chaining example
+            $("button").click(function() {
+                $("#p1").css("color", "blue")
+                        .slideUp(2000)
+                        .slideDown(2000);
+            });
+        });
+    </script>
+</head>
+<body>
+
+<p id="p1">Bhupen Bhagat : 249613</p>
+<button>Click Me</button>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Basic jQuery</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#b1").hover(function(){
+                document.write("Hello Bhupen")
+            });
+            $("p").on("click",function(){
+                $(this).css("background","yellow")
+            });
+            $("#b2").click(function(){
+                $("p").off("click")
+            });
+            $("#b3").on(function(){
+                $("#").hide();
+            });
+            $("input").select(function(){
+                $("input").after("Text Marked")
+            });
+            $("#b4").click(function(){
+                $("input").trigger("select")
+            });
+        });
+    </script>
+</head>
+<body>
+<button id="b1"> Hover</button>
+<p>Welcome to MCC</p><br>
+<p>Bhupen : 249613</p><br>
+<button id="b2">off</button><br>
+<p id="b1">Hello Bhupen</p><br>
+<button id="b3">on</button><br>
+<input type="text" value="Bhupen 249613"><br>
+<button id="b4">Trigger</button><br>
+</body>
+</html>
